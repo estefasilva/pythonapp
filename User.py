@@ -58,8 +58,9 @@ class User:
 
 
     employees = []
-#crear la funcion para crear el usuario:
-    def create_user(self, employees):
+    costumers = {}
+
+    def create_user(self):
         #employee = []
         self._employee_id = input("Id empleado: ")
         #employee.append(self._employee_id)
@@ -70,14 +71,13 @@ class User:
         self._email = input("Correo: ")
         #employee.append(self._email)
         self._password = input("Contraseña: ")
-
-
+#crear la funcion para crear el usuario:
         #employee.append(self._password)
         #self._salary = input("Salario")
         #employee.append(self._salary)
 
         #employees.append(employee)
 
-    def list_employee_data(self, employees):
-        for item in employees:
+    def list_employee_data(self):
+        for item in self.employees:
             print(item)
